@@ -40,7 +40,7 @@
       'faIcon': 'fa-wheelchair-alt',
       'callback': input => input.replace(
         /[a-z]/gi,
-        c => c[`to${(answer = !answer) ? 'Upp' : 'Low'}erCase`]()
+        c => c[`to${(quiz.answer = !quiz.answer) ? 'Upp' : 'Low'}erCase`]()
       ),
     }
   ];
